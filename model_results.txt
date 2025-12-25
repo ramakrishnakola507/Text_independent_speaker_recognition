@@ -1,0 +1,45 @@
+================================================================================
+          SPEAKER RECOGNITION RESULTS (VAD + CMVN ENABLED)
+================================================================================
+
+
+--- GMM Accuracy ---
+------------------------------------------------------------
+Input Features      GMM-2      GMM-4      GMM-8      GMM-16     GMM-32     GMM-64     GMM-128    GMM-256  
+13-D MFCC             24.56%  37.34%  51.40%  61.10%  67.43% ** 69.83%**** 69.55%** 65.79% 
+  -> Reversal at GMM-128: **69.55%**
+39-D MFCC             25.32%  36.22%  50.16%  57.41%  63.10% ** 65.95%**** 62.62%** 55.61% 
+  -> Reversal at GMM-128: **62.62%**
+
+--- Supervector Accuracy ---
+------------------------------------------------------------
+Input Features      GMM-2      GMM-4      GMM-8      GMM-16     GMM-32     GMM-64     GMM-128    GMM-256  
+13-D MFCC            **  7.41%**  2.20%   1.56%   1.36% **  1.85%**  1.03%   1.33%   1.48% 
+  -> Reversal at GMM-32: **1.85%**
+39-D MFCC            **  9.25%**  2.96%   2.08% **  2.16%**  1.28%   1.51%   1.28%   0.00% 
+  -> Reversal at GMM-16: **2.16%**
+
+--- i-vector Accuracy ---
+------------------------------------------------------------
+
+i-vector (13D) from 13-D MFCCs
+Input Features      GMM-2      GMM-4      GMM-8      GMM-16     GMM-32     GMM-64     GMM-128    GMM-256  
+13-D MFCC            **  6.93%****  2.32%**  1.60%   1.32%   1.12%   0.82%   0.89%   2.22% 
+  -> Reversal at GMM-4: **2.32%**
+
+i-vector (39D) from 13-D MFCCs
+Input Features      GMM-2      GMM-4      GMM-8      GMM-16     GMM-32     GMM-64     GMM-128    GMM-256  
+13-D MFCC            **  7.09%****  3.00%**  1.92%   1.40%   1.36%   1.32%   1.11%   1.11% 
+  -> Reversal at GMM-4: **3.00%**
+
+i-vector (13D) from 39-D MFCCs
+Input Features      GMM-2      GMM-4      GMM-8      GMM-16     GMM-32     GMM-64     GMM-128    GMM-256  
+39-D MFCC            **  4.05%****  1.88%**  1.44%   0.92%   1.00%   0.94%   1.13%   0.83% 
+  -> Reversal at GMM-4: **1.88%**
+
+i-vector (39D) from 39-D MFCCs
+Input Features      GMM-2      GMM-4      GMM-8      GMM-16     GMM-32     GMM-64     GMM-128    GMM-256  
+39-D MFCC            **  4.73%****  2.48%**  2.08%   1.88%   1.20%   1.23%   1.05%   0.41% 
+  -> Reversal at GMM-4: **2.48%**
+
+================================================================================
